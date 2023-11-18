@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom';
 export default function Landingpage(){
     return(
         <>
-            <Container>
+            <Container >
                 <Row>
                     <Col>
                         <h1><Badge bg="secondary">Welcome to RandomChat! </Badge></h1>

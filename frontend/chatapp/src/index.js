@@ -6,12 +6,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import reportWebVitals from './reportWebVitals';
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements,Link } from 'react-router-dom'
 import Landingpage from './components/landingpage.js';
+import Randomchat from "./components/randomchat.js";
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
       <Route path='' element={<Landingpage />} />
       <Route path='home' element={<Home />} />
-      <Route path='randomchat' element={<Chat />} />
+      <Route path='randomchat' element={<Randomchat />} />
       <Route path='groupchat'  element ={<Groupchat />} />
     </Route>
   )
@@ -27,11 +29,7 @@ function About(){
     <div>About Page</div>
   )
 }
-function Chat(){
-  return(
-    <div>Random Chat Page</div>
-  )
-}
+
 
 function Groupchat(){
   return(
