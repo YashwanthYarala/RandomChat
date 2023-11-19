@@ -9,6 +9,8 @@ import Stack from 'react-bootstrap/Stack';
 import { useState } from 'react';
 import CloseButton from 'react-bootstrap/CloseButton';
 import ReCAPTCHA from "react-google-recaptcha";
+import TextChat from './textchat';
+
 
 export default function Randomchat(){
 
@@ -110,7 +112,7 @@ export default function Randomchat(){
             </div>}
             {isChatExchangeVisible && recaptchaverfied&&
             <div className='chatexchangeui'>
-                  <h1>Here comes the chat UI</h1>       
+                  <TextChat/>      
             </div>
             }
 
@@ -120,7 +122,7 @@ export default function Randomchat(){
 function Chatui(){
     return(
         <>
-        
+
         </>
     )
 }
